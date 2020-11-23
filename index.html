@@ -9,7 +9,8 @@
     
   
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+      
+          <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
     
       
       <a-assets>
