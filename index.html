@@ -8,9 +8,10 @@
   <body style="margin : 0px; overflow: hidden;">
     
   
-        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+     
       
-          <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+         <a-scene embedded arjs>
+   >
     
       
       <a-assets>
@@ -18,7 +19,7 @@
 </a-assets>
 
 
-     <a-marker type='barcode' value='6'>
+       <a-marker type="pattern" url="https://raw.githubusercontent.com/eugene-figg/AR/main/biggerqr.patt"
         <a-entity
             position="0 0 0"
             gltf-model="#tree"
